@@ -1,8 +1,9 @@
+---
 name: melonticketalert
 on:
   schedule:
-    - cron: '*/5 * * * *' # Every 5 minutes
-workflow_dispatch:
+    - cron: "*/5 * * * *"
+workflow_dispatch: null
 jobs:
   job:
     runs-on: ubuntu-latest
@@ -15,4 +16,4 @@ jobs:
           schedule-id: 100001
           seat-id: 36
           slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
-          message: '<@U12345678> 달려달려~'
+          message: <@U12345678> 달려달려~
