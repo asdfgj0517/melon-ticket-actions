@@ -2,8 +2,8 @@
 name: melonticketalert
 on:
   schedule:
-    - cron: "*/5 * * * *"
-workflow_dispatch: null
+    - cron: '*/5 * * * *'
+  workflow_dispatch:    
 jobs:
   job:
     runs-on: ubuntu-latest
